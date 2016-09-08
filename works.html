@@ -244,9 +244,9 @@
           <div class="contact-form__bg"></div>
           <div class="contact-form__content">
             <h3 class="contact-form__heading sidestripes">Связаться со мной</h3>
-            <input type="text" name="name" placeholder="Имя" required data-check="username" class="contact-form__field">
-            <input type="email" name="email" placeholder="Email" required data-check="email" class="contact-form__field">
-            <textarea name="message" placeholder="Ваше сообщение (10 и более символов)" required data-check="text" class="contact-form__field contact-form__field_textarea"></textarea>
+            <input id="name" type="text" name="name" placeholder="Имя" required data-check="username" class="contact-form__field">
+            <input id="email" type="email" name="email" placeholder="Email" required data-check="email" class="contact-form__field">
+            <textarea id="message" name="message" placeholder="Ваше сообщение (10 и более символов)" required data-check="text" class="contact-form__field contact-form__field_textarea"></textarea>
           </div>
           <ul class="form-buttons">
             <li class="form-buttons__button form-buttons__button_even">
@@ -258,14 +258,10 @@
           </ul>
         </form>
       </div>
-      <div id="hm-popup" class="hm-popup">
-        <div class="hm-popup__container">
-          <div class="hm-popup__content">
-            <button class="hm-popup__close">
-              <div class="fa fa-close"></div>
-            </button>
-            <p class="hm-popup__text">Popup Text</p>
-          </div>
+      <div id="formModal" class="modal">
+        <div class="modal-content">
+          <p class="modal-text"></p>
+          <p id="msgSubmit" class="h3 text-center hidden"></p>
         </div>
       </div>
     </section>
